@@ -7,14 +7,14 @@ public class Test {
     public static void main(String[] args) throws ParseException {
         Scanner sc=new Scanner(System.in);
         System.out.println("FATURA ÖDEME SİSTEMİNE HOŞ GELDİNİZ!");
-
         MemberAccount memberAccount=new MemberAccount(1,"Cenker","Aydın","1CA",100.0);
         memberAccount.showMemberInfo();
 
         BillService billService=new Client();
         System.out.println("Fatura tipini girin (1-Telefon, 2-Internet, 3-Su): ");
         int faturaType = sc.nextInt();
-        sc.nextLine(); // Boş satırı oku
+
+        sc.nextLine();
 
         System.out.println("Üye kodunu girin: ");
         String memberCode = sc.nextLine();
